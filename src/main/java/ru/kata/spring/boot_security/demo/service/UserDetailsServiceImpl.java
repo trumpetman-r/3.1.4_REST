@@ -1,12 +1,13 @@
-package ru.kata.spring.boot_security.demo.services;
+package ru.kata.spring.boot_security.demo.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import ru.kata.spring.boot_security.demo.models.User;
+import org.springframework.stereotype.Service;
+import ru.kata.spring.boot_security.demo.model.User;
 
-@Component
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private final UserService userService;
